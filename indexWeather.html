@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Report</title>
+    <style>
+        body{
+            background-image: url(https://www.anchor.com.au/wp-content/uploads/2016/01/cloud-wallpaper-hd-background-5.png);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-repeat:no-repeat;
+            background-position:relative;
+            background-size: cover;
+        }
+        table{
+            margin: 30px;
+            background-color: rgba(0, 0, 0, 0.0);
+            border: 1px solid black;
+            border-collapse: collapse;        
+        }
+        #temp{
+            border-radius: 1px;            
+        }
+    </style>
+    <script src="weatherAPI.js"></script>
+</head>
+<body>
+    <center>
+        <h1>WEATHER REPORT</h1>
+        Enter the city: <input type="text" id="temp"><br><br>
+        <button id="submit" onclick="fetchWeather()">Fetch Weather</button><br><br>
+        Minimum and Maximum Temperatures
+        <div id="table">
+        </div>
+    </center>
+</body>
+</html>
